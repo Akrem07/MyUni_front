@@ -1,0 +1,620 @@
+.mid-content{
+    margin-top: 10px;
+  }
+  
+  .card1{
+      margin-top: 20px;
+  }
+  
+  .all-contain{
+      margin-top: 50px;
+      display: flex;
+      gap: 20px;
+  
+      width: 100%;
+      background-color: #ededed;
+  
+  }
+  
+  .input {
+      position:fixed;
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      background-color: hsl(216, 46%, 31%);
+      justify-content: top;
+      border-radius: 10px;
+      transition: 1s;
+      padding: 10px;
+      overflow: hidden;
+      height:89vh;
+      margin-top: 6px;
+    }
+    
+  .value {
+      font-size: 15px;
+      background-color: transparent;
+      border: none;
+      padding: 10px;
+      color: white;
+      display: flex;
+      position: relative;
+      gap: 5px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: 1s;
+      box-sizing: border-box;
+    }
+    
+  .value:not(:active):hover,
+  .value:focus {
+      display: flex;
+      box-sizing: border-box;
+      border: 2px solid #479aed;
+      color:  black;
+    }
+    
+    .value:focus,
+    .value:active {
+      background-color: #479aed;
+      outline: none;
+      margin-left: 17px;
+    }
+    
+    .value::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -15px;
+      width: 5px;
+      height: 80%;
+      background-color: #2f81f7;
+      border-radius: 5px;
+      opacity: 0;
+      transition: 1s;
+    }
+    
+    .value:focus::before,
+    .value:active::before {
+      opacity: 1;
+    }
+    
+    .value svg {
+      width: 20px;
+    }
+    
+    .input:hover > :not(.value:hover) {
+      transition: 300ms;
+      filter: blur(1.5px);
+      transform: scale(0.95, 0.95);
+    }
+  
+  
+    .icon{
+      margin-top: -4px;
+    }
+  
+  .hrr{
+  width: 100%;
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+  }
+  
+  .Logout-bt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 1s;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+  
+  }
+  
+  
+  
+  
+  
+  
+  .card p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+  }
+  
+  .card p.small {
+    font-size: 14px;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: hsl(216, 46%, 31%);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card1 {
+    display: block;
+    position: relative;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    left: 26%;
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: hsl(216, 46%, 31%);
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.55s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(21);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+  
+  .card2 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 900px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card2:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .card2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: hsl(216, 46%, 31%);
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  
+    
+  }
+  
+  .card2:hover:before {
+    transform: scale(2.15);
+  }
+  
+  .card3 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 900px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card3 .go-corner {
+    opacity: 0.7;
+  }
+  
+  .card3:hover {
+    border: 1px solid hsl(216, 46%, 31%);
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+  }
+  
+  .card3:hover p {
+    color: hsl(216, 46%, 31%);
+  }
+  
+  .card3:hover .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+  }
+  
+  .card4 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .card4 .go-corner {
+    background-color: hsl(216, 46%, 31%);
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+  }
+  
+  .card4 .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+  
+  .card4:hover {
+    border: 1px solid #cd3d73;
+  }
+  
+  .card4 h3 {
+    margin-top: 8px;
+  }
+  
+  .card4:hover .go-corner {
+    margin-right: -12px;
+  }
+  
+  .card4:hover .go-arrow {
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  .header{
+    position: relative;
+    left: 26%;
+    display: flex;
+    width: 900px;
+    height: 40px;
+    background-color: white;
+    justify-content: left;
+    align-items:center;
+    color: gray;
+    font-size: 22px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+  
+  }
+  
+  .p-header{
+  margin-top: 16px;
+  margin-left: 10px;
+  }
+  
+  
+  
+
+  
+  .Card-conatiner{
+    display: grid;
+    max-width: 900px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .card9 {
+    margin-top: 10px;
+    width: 280px;
+    height: 280px;
+    background: rgb(203, 203, 203);
+    border-radius: 15px;
+    padding: 3px;
+    position: fixed;
+    left: 79%;
+    box-shadow: #604b4a30 0px 70px 30px -50px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card9 .mail9 {
+    position: absolute;
+    right: 2rem;
+    top: 1.4rem;
+    background: transparent;
+    border: none;
+  }
+  
+  .card9 .mail9 svg {
+    stroke: white;
+    stroke-width: 3px;
+  }
+  
+  .card9 .mail9 svg:hover {
+    stroke: #479aed;
+  }
+  
+  .card9 .profile-pic9 {
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    top: 3px;
+    left: 3px;
+    border-radius: 13px;
+    z-index: 1;
+    border: 0px solid white;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+  }
+  
+  .card9 .profile-pic9 img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -o-object-position: 0px 0px;
+    object-position: 0px 0px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .card9 .profile-pic9 svg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 0px 0px;
+    object-position: 0px 0px;
+    transform-origin: 45% 20%;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .card9 .bottom9 {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    background:white;
+    top: 80%;
+    border-radius: 13px;
+    z-index: 2;
+    box-shadow: rgba(127, 127, 127, 0.445) 0px 5px 5px 0px inset;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+  
+  .card9 .bottom9 .content9 {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 160px;
+  }
+  
+  .card9 .bottom9 .content9 .name9 {
+    display: block;
+    font-size: 1.2rem;
+    color: hsl(216, 46%, 31%);
+    font-weight: bold;
+  }
+  
+  .card9 .bottom9 .content9 .about-me9 {
+    display: block;
+    font-size: 0.9rem;
+    color: hsl(216, 46%, 31%);
+    margin-top: 1rem;
+  }
+  
+  .card9 .bottom9 .bottom-bottom9 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card9 .bottom9 .bottom-bottom9 .social-links-container9 {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .card9 .bottom9 .bottom-bottom9 .social-links-container9 svg {
+    height: 20px;
+    fill: hsl(216, 46%, 31%);
+    filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
+  }
+  
+  .card9 .bottom9 .bottom-bottom9 .social-links-container9 svg:hover {
+    fill: #479aed;
+    transform: scale(1.2);
+  }
+  
+  .card9 .bottom9 .bottom-bottom9 .button9 {
+    background: hsl(216, 46%, 31%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    padding: 0.4rem 0.6rem;
+    box-shadow: rgba(127, 127, 127, 0.445) 0px 5px 5px 0px ;
+  }
+  
+  .card9 .bottom9 .bottom-bottom9 .button9:hover {
+    background: #479aed;
+    color: rgb(203, 203, 203);
+  }
+  
+  .card9:hover {
+    border-top-left-radius: 55px;
+  }
+  
+  .card9:hover .bottom9 {
+    top: 20%;
+    border-radius: 80px 13px 13px 13px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  }
+  
+  .card9:hover .profile-pic9 {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    border: 7px solid white;
+    box-shadow: rgba(127, 127, 127, 0.445) 0px 5px 5px 0px inset;
+    transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+  }
+  
+  .card9:hover .profile-pic9:hover {
+    transform: scale(1.3);
+    border-radius: 0px;
+  }
+  
+  .card9:hover .profile-pic9 img {
+    transform: scale(2.5);
+    -o-object-position: 0px 25px;
+    object-position: 0px 25px;
+    transition: all 0.5s ease-in-out 0.5s;
+  }
+  
+  .card9:hover .profile-pic9 svg {
+    transform: scale(2.5);
+    transition: all 0.5s ease-in-out 0.5s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .cards {
+    position: fixed;
+    top: 50%;
+    left: 80.3%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cards .red {
+    background-color: white;
+  }
+  
+  .cards .blue {
+    background-color: white;
+  }
+  
+  .cards .green {
+    background-color:white;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  
+  }
